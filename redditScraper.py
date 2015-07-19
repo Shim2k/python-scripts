@@ -57,7 +57,7 @@ def imgurContent():
 
 	client = ImgurClient(client_id, client_secret)
 
-	for album in client.get_account_albums('ALBUM'):
+	for album in client.get_account_albums('ALBUM-NAME'):
 		album_title = album.title if album.title else 'Untitled'
 		print('Album: {0} ({1})'.format(album_title, album.id))
 
